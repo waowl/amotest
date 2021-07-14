@@ -117,6 +117,7 @@ class AuthService
                     $token->save();
                 }
             );
+
         return  $apiClient;
     }
 }

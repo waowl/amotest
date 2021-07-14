@@ -32,7 +32,7 @@
                 </div>
             @endif
             <div class="form_wrapper">
-                <form action="{{ route('contact.store') }}" method="post" class="form">
+                <form autocomplete="off" action="{{ route('contact.store') }}" method="post" class="form">
                     @csrf
                     <div class="form_item">
                         <label for="name">

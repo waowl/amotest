@@ -20,7 +20,7 @@ class AuthController extends Controller
         $this->authService = $authService;
     }
 
-    public function authorize(): \Illuminate\Http\RedirectResponse
+    public function redirect()
     {
         if($this->authService->authorize()) {
             return redirect()->route('contact.create');
