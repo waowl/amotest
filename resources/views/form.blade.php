@@ -16,12 +16,18 @@
                     Создать клиента
                 </h1>
             </div>
-            @if ($errors->any())
+            @if (session()->has('errors'))
                 <div class="alert alert-danger">
                     <ul>
-                        @foreach ($errors->all() as $error)
+                        @foreach ( $errors->all() as $error )
                             <li>{{ $error }}</li>
                         @endforeach
+                    </ul>
+                </div>
+            @elseif(session()->has('success'))
+                <div class="alert alert-success">
+                    <ul>
+                        <li>{{ session()->get('success') }}</li>
                     </ul>
                 </div>
             @endif
