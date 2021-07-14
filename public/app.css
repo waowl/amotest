@@ -1,0 +1,11 @@
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.form{
+    display:flex;
+}
+.form_item{
+    margin-right: 20px;
+}
+
