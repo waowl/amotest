@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ContactController;
 
-Route::get('/auth/redirect', 'App\Http\Controllers\AuthController@authorize');
+Route::get('/auth/redirect', 'App\Http\Controllers\AuthController@redirect');
 
 Route::get('/client/create', 'App\Http\Controllers\ContactController@create')->name('contact.create');
 Route::post('/client/store', 'App\Http\Controllers\ContactController@store')->name('contact.store');
